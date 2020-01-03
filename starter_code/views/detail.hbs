@@ -1,0 +1,28 @@
+<div class="container mt-4 pt-4">
+  <div class="row">
+    <div class="col-5">
+      <img src="{{movie.image}}" class="card-img-top" alt="{{movie.title}}">
+    </div>
+    <div class="col-7">
+      <h2>{{movie.title}}</h2>
+      <h4>Director:</h4>
+      <p>{{movie.director}}</p>
+      <h5 class="mt-4">Stars:</h5>
+      {{#each movie.stars as |star|}}
+      <ul>
+        <li><p>{{star}}</p></li>
+      </ul>
+      {{/each}}
+      <h5 class="mt-4">Description:</h5>
+      <p>{{movie.description}}</p>
+
+      <ol class="breadcrumb mt-4">
+        {{#each movie.showtimes as |time|}}
+          <li class="breadcrumb-item">{{time}}</li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+  <hr/>
+  <a class="btn btn-primary mt-4 float-right btn-lg" href="/movies">Back</a>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4">
+    {{#each movies as |movie| }}
+    <div class="col mb-4">
+        <div class="card h-100">
+          {{#if image}}
+            <img src="{{movie.image}}" class="card-img-top" alt="{{movie.title}}">
+          {{else}}
+            <img src="https://www.quimicamaguey.cl/wp-content/themes/maguey/images/default.png" class="card-img-top" alt="{{movie.title}}">
+          {{/if}}
+          <div class="card-body">
+            <h5 class="card-title">{{movie.title}}</h5>
+            <a href="/movies/{{this.id}}" class="btn btn-primary">See movie details</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

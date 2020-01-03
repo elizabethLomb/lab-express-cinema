@@ -1,0 +1,17 @@
+.index_container {
+  background: url(/images/cinema.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; }
+  .index_container .text_wrap {
+    height: 100vh; }
+    .index_container .text_wrap h1 {
+      color: white;
+      padding-top: 160px; }
+    .index_container .text_wrap .btn {
+      border-radius: 30px;
+      margin-top: 40px;
+      padding: 10px 40px; }
+
+/*# sourceMappingURL=style.css.map */
